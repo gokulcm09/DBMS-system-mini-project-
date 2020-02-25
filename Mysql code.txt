@@ -1,0 +1,12 @@
+//the year near table depends on user
+//ffee means female fee
+//mfee means male fee
+create table ffee2019(adno int(10) primary key,name varchar(50),type varchar(20),jan varchar(50),feb varchar(50),mar varchar(50),april varchar(50),may varchar(50),jun varchar(50),jul varchar(50),aug varchar(50),sept varchar(50),oct varchar(50),nov varchar(50),dece varchar(50),doj varchar(20));
+create table mfee2019(adno int(10) primary key,name varchar(50),type varchar(20),jan varchar(50),feb varchar(50),mar varchar(50),april varchar(50),may varchar(50),jun varchar(50),jul varchar(50),aug varchar(50),sept varchar(50),oct varchar(50),nov varchar(50),dece varchar(50),doj varchar(20));
+
+//fmem means female members
+//mmem means male members
+create table fmem(adno int(10) primary key,name varchar(50),phnum varchar(20) unique key,doj varchar(15),bloodgroup varchar(10),heigth varchar(10),weight varchar(10),bmi varchar(50),healthissue varchar(50),type varchar(20),package varchar(20),address varchar(50));
+create table mmem(adno int(10) primary key,name varchar(50),phnum varchar(20) unique key,doj varchar(15),bloodgroup varchar(10),heigth varchar(10),weight varchar(10),bmi varchar(50),healthissue varchar(50),type varchar(20),package varchar(20),address varchar(50));
+
+create table user(name varchar(50),password varchar(100) primary key);
